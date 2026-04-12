@@ -3,7 +3,6 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-
 void framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0,0, width, height);
@@ -33,6 +32,12 @@ bool DisplayManager::Init(int width, int height)
     glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
     glfwSwapInterval(1);
 
+    int framebufferWidth, framebufferHeight;
+    glfwGetFramebufferSize(m_window, &framebufferWidth, &framebufferHeight);
+    glViewport(0, 0, framebufferWidth, framebufferHeight);
+
+    glEnable(GL_DEPTH_TEST);
+
     return true;
 }
 
@@ -53,7 +58,7 @@ void DisplayManager::PollEvents()
 
 void DisplayManager::Clear()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void DisplayManager::SwapBuffers()
@@ -69,6 +74,20 @@ void DisplayManager::Close()
 void DisplayManager::SetClearColor(float r, float g, float b, float a)
 {
     glClearColor(r / 255.0f, g / 255.0f, b / 255.0f, a);
+}
+
+int DisplayManager::GetFrameBufferWidth()
+{
+    int framebufferWidth, framebufferHeight;
+    glfwGetFramebufferSize(m_window, &framebufferWidth, &framebufferHeight);
+    return framebufferWidth;
+}
+
+int DisplayManager::GetFrameBufferHeight()
+{
+    int framebufferWidth, framebufferHeight;
+    glfwGetFramebufferSize(m_window, &framebufferWidth, &framebufferHeight);
+    return framebufferHeight;
 }
 
 GLFWwindow* DisplayManager::GetWindow()

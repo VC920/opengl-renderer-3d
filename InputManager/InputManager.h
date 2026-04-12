@@ -18,12 +18,12 @@ private:
     InputManager& operator=(InputManager&&) = delete;
 /* ========== */
 
-private:
-    std::array<bool, 349> m_keys;
-
 public:
     void Init(GLFWwindow *window);
 
     void SetKeyPressed(int key, bool pressed);
     bool IsKeyPressed(int key);
+    
+private:
+    std::array<bool, 349> m_keys;
 };

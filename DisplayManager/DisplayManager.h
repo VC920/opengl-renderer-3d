@@ -17,10 +17,8 @@ private:
     DisplayManager& operator=(DisplayManager&&) = delete;
 /* ========== */
 
-private:
-    GLFWwindow* m_window;
-
 public:
+    // 函数
     bool Init(int width, int height);
     void Destroy();
 
@@ -31,5 +29,11 @@ public:
     void Close();
 
     void SetClearColor(float r, float g, float b, float a);
+    int GetFrameBufferWidth();
+    int GetFrameBufferHeight();
     GLFWwindow* GetWindow();
+
+private:
+    // 数据
+    GLFWwindow* m_window;
 };
