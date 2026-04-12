@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/renderer.dir/link.d"
+  "CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o"
+  "CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o.d"
+  "CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o"
+  "CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o.d"
   "CMakeFiles/renderer.dir/main.cpp.o"
   "CMakeFiles/renderer.dir/main.cpp.o.d"
   "CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o"

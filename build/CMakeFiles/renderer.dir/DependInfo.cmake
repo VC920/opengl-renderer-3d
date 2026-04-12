@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/src/glad.c" "CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o" "gcc" "CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o.d"
+  "/home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp" "CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o" "gcc" "CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o.d"
+  "/home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp" "CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o" "gcc" "CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o.d"
   "/home/vc/Documents/opengl-renderer-3d/main.cpp" "CMakeFiles/renderer.dir/main.cpp.o" "gcc" "CMakeFiles/renderer.dir/main.cpp.o.d"
   "" "renderer" "gcc" "CMakeFiles/renderer.dir/link.d"
   )

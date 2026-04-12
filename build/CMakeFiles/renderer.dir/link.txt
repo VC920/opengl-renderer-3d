@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/renderer.dir/link.d CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o CMakeFiles/renderer.dir/main.cpp.o -o renderer
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/renderer.dir/link.d CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o CMakeFiles/renderer.dir/main.cpp.o -o renderer  -lglfw

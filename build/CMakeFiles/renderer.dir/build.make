@@ -86,10 +86,38 @@ CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vc/Documents/opengl-renderer-3d/thirdparty/glad/src/glad.c -o CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.s
 
+CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o: /home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp
+CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o -MF CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o.d -o CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o -c /home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp
+
+CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp > CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.i
+
+CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp -o CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.s
+
+CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o: CMakeFiles/renderer.dir/flags.make
+CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o: /home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp
+CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o -MF CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o.d -o CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o -c /home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp
+
+CMakeFiles/renderer.dir/InputManager/InputManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/renderer.dir/InputManager/InputManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp > CMakeFiles/renderer.dir/InputManager/InputManager.cpp.i
+
+CMakeFiles/renderer.dir/InputManager/InputManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/renderer.dir/InputManager/InputManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp -o CMakeFiles/renderer.dir/InputManager/InputManager.cpp.s
+
 CMakeFiles/renderer.dir/main.cpp.o: CMakeFiles/renderer.dir/flags.make
 CMakeFiles/renderer.dir/main.cpp.o: /home/vc/Documents/opengl-renderer-3d/main.cpp
 CMakeFiles/renderer.dir/main.cpp.o: CMakeFiles/renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/renderer.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/renderer.dir/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/renderer.dir/main.cpp.o -MF CMakeFiles/renderer.dir/main.cpp.o.d -o CMakeFiles/renderer.dir/main.cpp.o -c /home/vc/Documents/opengl-renderer-3d/main.cpp
 
 CMakeFiles/renderer.dir/main.cpp.i: cmake_force
@@ -103,17 +131,21 @@ CMakeFiles/renderer.dir/main.cpp.s: cmake_force
 # Object files for target renderer
 renderer_OBJECTS = \
 "CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o" \
+"CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o" \
+"CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o" \
 "CMakeFiles/renderer.dir/main.cpp.o"
 
 # External object files for target renderer
 renderer_EXTERNAL_OBJECTS =
 
 renderer: CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o
+renderer: CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o
+renderer: CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o
 renderer: CMakeFiles/renderer.dir/main.cpp.o
 renderer: CMakeFiles/renderer.dir/build.make
 renderer: CMakeFiles/renderer.dir/compiler_depend.ts
 renderer: CMakeFiles/renderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vc/Documents/opengl-renderer-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable renderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/renderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -129,6 +129,54 @@ renderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/build
 .PHONY : renderer/fast
 
+DisplayManager/DisplayManager.o: DisplayManager/DisplayManager.cpp.o
+.PHONY : DisplayManager/DisplayManager.o
+
+# target to build an object file
+DisplayManager/DisplayManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o
+.PHONY : DisplayManager/DisplayManager.cpp.o
+
+DisplayManager/DisplayManager.i: DisplayManager/DisplayManager.cpp.i
+.PHONY : DisplayManager/DisplayManager.i
+
+# target to preprocess a source file
+DisplayManager/DisplayManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.i
+.PHONY : DisplayManager/DisplayManager.cpp.i
+
+DisplayManager/DisplayManager.s: DisplayManager/DisplayManager.cpp.s
+.PHONY : DisplayManager/DisplayManager.s
+
+# target to generate assembly for a file
+DisplayManager/DisplayManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.s
+.PHONY : DisplayManager/DisplayManager.cpp.s
+
+InputManager/InputManager.o: InputManager/InputManager.cpp.o
+.PHONY : InputManager/InputManager.o
+
+# target to build an object file
+InputManager/InputManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o
+.PHONY : InputManager/InputManager.cpp.o
+
+InputManager/InputManager.i: InputManager/InputManager.cpp.i
+.PHONY : InputManager/InputManager.i
+
+# target to preprocess a source file
+InputManager/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/InputManager/InputManager.cpp.i
+.PHONY : InputManager/InputManager.cpp.i
+
+InputManager/InputManager.s: InputManager/InputManager.cpp.s
+.PHONY : InputManager/InputManager.s
+
+# target to generate assembly for a file
+InputManager/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/InputManager/InputManager.cpp.s
+.PHONY : InputManager/InputManager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,6 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... renderer"
+	@echo "... DisplayManager/DisplayManager.o"
+	@echo "... DisplayManager/DisplayManager.i"
+	@echo "... DisplayManager/DisplayManager.s"
+	@echo "... InputManager/InputManager.o"
+	@echo "... InputManager/InputManager.i"
+	@echo "... InputManager/InputManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

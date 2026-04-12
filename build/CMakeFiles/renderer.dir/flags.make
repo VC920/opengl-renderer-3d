@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/g++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include
+C_INCLUDES = -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include
+CXX_INCLUDES = -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager
 
 CXX_FLAGS = -g
 

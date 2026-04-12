@@ -1,13 +1,25 @@
 [
 {
   "directory": "/home/vc/Documents/opengl-renderer-3d/build",
-  "command": "/usr/bin/gcc  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -g -o CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o -c /home/vc/Documents/opengl-renderer-3d/thirdparty/glad/src/glad.c",
+  "command": "/usr/bin/gcc  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager -g -o CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o -c /home/vc/Documents/opengl-renderer-3d/thirdparty/glad/src/glad.c",
   "file": "/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/src/glad.c",
   "output": "CMakeFiles/renderer.dir/thirdparty/glad/src/glad.c.o"
 },
 {
   "directory": "/home/vc/Documents/opengl-renderer-3d/build",
-  "command": "/usr/bin/g++  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -g -o CMakeFiles/renderer.dir/main.cpp.o -c /home/vc/Documents/opengl-renderer-3d/main.cpp",
+  "command": "/usr/bin/g++  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager -g -o CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o -c /home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp",
+  "file": "/home/vc/Documents/opengl-renderer-3d/DisplayManager/DisplayManager.cpp",
+  "output": "CMakeFiles/renderer.dir/DisplayManager/DisplayManager.cpp.o"
+},
+{
+  "directory": "/home/vc/Documents/opengl-renderer-3d/build",
+  "command": "/usr/bin/g++  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager -g -o CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o -c /home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp",
+  "file": "/home/vc/Documents/opengl-renderer-3d/InputManager/InputManager.cpp",
+  "output": "CMakeFiles/renderer.dir/InputManager/InputManager.cpp.o"
+},
+{
+  "directory": "/home/vc/Documents/opengl-renderer-3d/build",
+  "command": "/usr/bin/g++  -I/home/vc/Documents/opengl-renderer-3d/thirdparty/glad/include -I/home/vc/Documents/opengl-renderer-3d/DisplayManager -I/home/vc/Documents/opengl-renderer-3d/InputManager -g -o CMakeFiles/renderer.dir/main.cpp.o -c /home/vc/Documents/opengl-renderer-3d/main.cpp",
   "file": "/home/vc/Documents/opengl-renderer-3d/main.cpp",
   "output": "CMakeFiles/renderer.dir/main.cpp.o"
 }

@@ -5,3 +5,6 @@
     2.glm       命令：sudo dnf install glm-devel  
     3.assimp    命令：sudo dnf install assimp-devel  
     4.glad      已经在thirdparty里面了  
+这是一个周日放松项目
+
+DisplayManager和InputManager使用了单例模式（迈耶斯单例）  
