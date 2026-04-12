@@ -16,13 +16,21 @@ int main()
     while(!displayManager.ShouldClose()) {
         // Poll Event
         displayManager.PollEvents();
+
         // Process Input
-        if (inputManager.IsKeyPressed(GLFW_KEY_ESCAPE)) {
-            displayManager.Close();
+        {
+            if (inputManager.IsKeyPressed(GLFW_KEY_ESCAPE)) {
+                displayManager.Close();
+            }
         }
 
         displayManager.Clear();
+
         // Render
+        {
+            
+        }
+
         displayManager.SwapBuffers();
     }
 

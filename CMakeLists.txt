@@ -12,6 +12,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     thirdparty/glad/include
     DisplayManager
     InputManager
+    Renderer
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
