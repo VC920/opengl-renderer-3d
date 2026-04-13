@@ -19,13 +19,15 @@ int main()
 
     Shader shader("res/shader/until.vs", "res/shader/until.fs");
     Texture texture0("texture_diffuse", "res/backpack/diffuse.jpg", 0);
+    Texture texture1("texture_specular", "res/backpack/specular.jpg", 1);
 
-    std::vector<Texture> textures;
-    textures.push_back(texture0);
-    
+    Material material;
+    material.UseShader(shader);
+    material.PushTexture(texture0);
+    material.PushTexture(texture1);
 
-    Material material(textures, shader);
     Model packback("res/backpack/backpack.obj");
+    packback.SetMaterial(material);
 
     // Loop
     while(!displayManager.ShouldClose()) {
@@ -53,7 +55,6 @@ int main()
 
             glm::mat4 mvp = projection * view * model;
 
-            packback.SetMaterial(material);
             packback.SetMVP(mvp);
             packback.Draw();
         }

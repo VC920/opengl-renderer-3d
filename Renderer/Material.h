@@ -6,11 +6,6 @@ class Material
 {
 public:
     Material() {}
-    Material(std::vector<Texture> &textures, Shader &shader) 
-    {
-        m_textures = textures;
-        m_shader = shader;
-    }
 
     void Use()
     {
@@ -24,6 +19,16 @@ public:
     void SetMVP(glm::mat4 &mvp)
     {
         m_shader.setMat4("mvp", mvp);
+    }
+
+    void PushTexture(Texture &texture)
+    {
+        m_textures.push_back(texture);
+    }
+
+    void UseShader(Shader &shader)
+    {
+        m_shader = shader;
     }
 
 private:
