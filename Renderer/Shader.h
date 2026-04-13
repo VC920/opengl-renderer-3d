@@ -10,6 +10,7 @@ class Shader
 public:
     unsigned int ID;
 
+    Shader() {};
     Shader(const char *vertexPath, const char *fragmentPath)
     {
         // 加载着色器源代码

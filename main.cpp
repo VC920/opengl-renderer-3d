@@ -1,6 +1,6 @@
 #include "DisplayManager.h"
 #include "InputManager.h"
-#include "MeshGroup.h"
+#include "Model.h"
 #include "Material.h"
 #include "Shader.h"
 #include "Texture.h"
@@ -18,10 +18,14 @@ int main()
     inputManager.Init(displayManager.GetWindow());
 
     Shader shader("res/shader/until.vs", "res/shader/until.fs");
-    Texture texture("texture_diffuse", "res/backpack/diffuse.jpg", 0);
+    Texture texture0("texture_diffuse", "res/backpack/diffuse.jpg", 0);
 
-    Material material(&texture, &shader);
-    MeshGroup packback("res/backpack/backpack.obj");
+    std::vector<Texture> textures;
+    textures.push_back(texture0);
+    
+
+    Material material(textures, shader);
+    Model packback("res/backpack/backpack.obj");
 
     // Loop
     while(!displayManager.ShouldClose()) {
@@ -49,7 +53,8 @@ int main()
 
             glm::mat4 mvp = projection * view * model;
 
-            material.SetMVP(mvp);
+            packback.SetMaterial(material);
+            packback.SetMVP(mvp);
             packback.Draw();
         }
 

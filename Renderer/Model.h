@@ -7,21 +7,34 @@
 #include <iostream>
 
 #include "Mesh.h"
+#include "Material.h"
 
 class aiNode;
 class aiMesh;
 class aiScene;
-class MeshGroup
+class Model
 {
 public:
     // 函数
-    MeshGroup(const char *path)
+    Model(const char *path)
     {
         loadMesh(path);
     }
 
+    void SetMaterial(Material &material)
+    {
+        m_material = material;
+    }
+
+    void SetMVP(glm::mat4 &mvp)
+    {
+        m_material.SetMVP(mvp);
+    }
+
     void Draw()
     {
+        m_material.Use();
+        
         for (unsigned int i = 0; i < m_meshes.size(); i++) {
             m_meshes[i].Draw();
         }
@@ -30,6 +43,7 @@ public:
 private:
     // 模型数据
     std::vector<Mesh> m_meshes;
+    Material m_material;
     std::string m_directory;
 
     // 函数

@@ -5,26 +5,28 @@
 class Material
 {
 public:
-    Material(Texture *texture, Shader *shader) 
+    Material() {}
+    Material(std::vector<Texture> &textures, Shader &shader) 
     {
-        m_texture = texture;
+        m_textures = textures;
         m_shader = shader;
     }
 
-    void UseTexture(int num)
+    void Use()
     {
-        m_shader->Use();
-        m_texture->Use();
-        m_shader->SetTexture(m_texture->m_name, num);
+        m_shader.Use();
+        for (int i = 0; i < m_textures.size(); i++) {
+            m_textures[i].Use();
+            m_shader.SetTexture(m_textures[i].m_name, m_textures[i].m_num);
+        }
     }
 
-    void SetMVP(glm::mat4 mvp)
+    void SetMVP(glm::mat4 &mvp)
     {
-        m_shader->Use();
-        m_shader->setMat4("mvp", mvp);
+        m_shader.setMat4("mvp", mvp);
     }
 
 private:
-    Texture* m_texture;
-    Shader* m_shader;
+    std::vector<Texture> m_textures;
+    Shader m_shader;
 };
